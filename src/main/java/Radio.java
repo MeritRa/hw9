@@ -1,6 +1,6 @@
 public class Radio {
     private int radiostation;
-    
+
     public int setRadiostation(int newRadiostation) {
         if (newRadiostation < 1) {
             return radiostation = 1;
@@ -30,10 +30,10 @@ public class Radio {
     private int currentVolume;
 
     public int setCurrentVolume(int newCurrentVolume) {
-        if (newCurrentVolume > 10) {
+        if (newCurrentVolume >= 10) {
             return currentVolume = 10;
         }
-        if (newCurrentVolume < 0) {
+        if (newCurrentVolume <= 0) {
             return currentVolume = 0;
         }
         return currentVolume = newCurrentVolume;

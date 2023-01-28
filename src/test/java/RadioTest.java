@@ -120,9 +120,9 @@ public class RadioTest {
     public void decreaseVolumeTest() {
         Radio radio = new Radio();
 
-        radio.setCurrentVolume(10);
+        radio.setCurrentVolume(9);
 
-        int expected = 9;
+        int expected = 8;
         int actual = radio.decreaseVolume();
 
         Assertions.assertEquals(expected, actual);
